@@ -32,13 +32,17 @@ namespace ProjetoWeb3C.UI
                 {
                     msgerro.Visible = true;
                     msgerro.Text = "Cliente Localizado";
+                    // chamando o novo formulário
+
+                    Session["usuario"] = tblClienteDTO.Email_cliente;
+                    
                     Response.Redirect("Default.aspx");
                 }
                 else
                 {
                     msgerro.Visible = true;
-                    msgerro.Text = "Cliente Não Localizado";
-
+                    msgerro.Text = "Cliente Não Localizado. Verifique.";
+                    Session["usuario"] = null;
                 }
             }
             catch (Exception ex)

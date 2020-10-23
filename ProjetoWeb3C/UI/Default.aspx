@@ -22,10 +22,9 @@
               <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav mr-auto">
                   
-                  <li class="nav-item">
-                    <a class="nav-link" href="Login.aspx">Login</a>
+                  <li  class="nav-item">
+                    <a class="nav-link" href="">Meu Perfil</a>
                   </li>
-                
                 
                 </ul>
               
@@ -33,7 +32,10 @@
                  
               
               </div>
-            </nav>
+                    <asp:Label ID="usuario_logado" runat="server" Text="Usuário Não Logado." ForeColor="White"></asp:Label>
+              <br />
+                <asp:Button ID="btnSair" runat="server"  class="btn btn-lg btn-primary" Text="Sair" OnClick="btnSair_Click" />
+              </nav>
 
         <br />
          <br />

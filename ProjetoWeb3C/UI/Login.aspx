@@ -14,10 +14,22 @@
         <div>
             <h3>Acesso ao Sistema</h3>
             <asp:Label ID="Label1" runat="server" Text="Email"></asp:Label>
-            <asp:TextBox ID="txtEmail" type="email" class="form-control" runat="server"></asp:TextBox>
+
+            <asp:TextBox ID="txtEmail" type="email" class="form-control"  runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator runat="server" ID="requiredEmail" ControlToValidate="txtEmail" 
+               ErrorMessage   ="O Campo Email é Obrigatório." 
+                ForeColor="Red" SetFocusOnError="true"
+                />
+
             <br />
             <asp:Label ID="Label2" runat="server" Text="Senha"></asp:Label>
+
             <asp:TextBox ID="txtSenha" type="password" class="form-control" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator runat="server" ID="RequiredSenha" ControlToValidate="txtSenha" 
+                ErrorMessage   ="A senha é Obrigatória." 
+                ForeColor="Red" SetFocusOnError="true"
+                />
+
             <br />
             <asp:Button ID="btnLogin" class="btn btn-lg btn-primary btn-block" runat="server" Text="Login" OnClick="btnLogin_Click" />
 

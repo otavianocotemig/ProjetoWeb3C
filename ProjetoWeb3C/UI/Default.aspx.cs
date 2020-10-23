@@ -15,6 +15,15 @@ namespace ProjetoWeb3C.UI
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["usuario"] == null)
+            {
+                Response.Redirect("login.aspx");
+            }
+            else
+            {
+                usuario_logado.Text = Session["usuario"].ToString();
+                
+            }
 
         }
 
@@ -23,6 +32,12 @@ namespace ProjetoWeb3C.UI
             string condicao = " nomeproduto like '%" + txtPesquisar.Text + "%'";
             GridProdutos.DataSource = produtoBLL.ListarProdutos(condicao);
             GridProdutos.DataBind();
+        }
+
+        protected void btnSair_Click(object sender, EventArgs e)
+        {
+            Session["usuario"] = null;
+            Response.Redirect("login.aspx");
         }
     }
 }

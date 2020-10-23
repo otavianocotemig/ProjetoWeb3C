@@ -42,6 +42,15 @@ namespace ProjetoWeb3C.UI
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
 
         /// <summary>
+        /// Controle requiredEmail.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator requiredEmail;
+
+        /// <summary>
         /// Controle Label2.
         /// </summary>
         /// <remarks>
@@ -58,6 +67,15 @@ namespace ProjetoWeb3C.UI
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtSenha;
+
+        /// <summary>
+        /// Controle RequiredSenha.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredSenha;
 
         /// <summary>
         /// Controle btnLogin.
