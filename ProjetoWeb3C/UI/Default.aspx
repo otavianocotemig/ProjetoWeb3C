@@ -23,7 +23,7 @@
                 <ul class="navbar-nav mr-auto">
                   
                   <li  class="nav-item">
-                    <a class="nav-link" href="">Meu Perfil</a>
+                    <a class="nav-link" href="FrmMeuPerfil.aspx">Meu Perfil</a>
                   </li>
                 
                 </ul>

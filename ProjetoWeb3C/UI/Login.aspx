@@ -25,16 +25,14 @@
             <asp:Label ID="Label2" runat="server" Text="Senha"></asp:Label>
 
             <asp:TextBox ID="txtSenha" type="password" class="form-control" runat="server"></asp:TextBox>
-            <asp:RequiredFieldValidator runat="server" ID="RequiredSenha" ControlToValidate="txtSenha" 
-                ErrorMessage   ="A senha é Obrigatória." 
-                ForeColor="Red" SetFocusOnError="true"
-                />
+            
 
             <br />
             <asp:Button ID="btnLogin" class="btn btn-lg btn-primary btn-block" runat="server" Text="Login" OnClick="btnLogin_Click" />
 
               <asp:Label ID="msgerro" runat="server" ForeColor="#FF3300"></asp:Label>
         </div>
+        <asp:LinkButton ID="btnEsqueciSenha" class="btn btn-link" runat="server" OnClick="btnEsqueciSenha_Click">Esqueci Minha Senha</asp:LinkButton>
     </form>
 </body>
 </html>

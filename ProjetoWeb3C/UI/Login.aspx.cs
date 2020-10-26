@@ -52,5 +52,11 @@ namespace ProjetoWeb3C.UI
             }
 
         }
+
+        protected void btnEsqueciSenha_Click(object sender, EventArgs e)
+        {
+            msgerro.Text = tblClienteBLL.RecuperaSenha(txtEmail.Text.Trim());
+             
+        }
     }
 }

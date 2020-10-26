@@ -69,15 +69,6 @@ namespace ProjetoWeb3C.UI
         protected global::System.Web.UI.WebControls.TextBox txtSenha;
 
         /// <summary>
-        /// Controle RequiredSenha.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredSenha;
-
-        /// <summary>
         /// Controle btnLogin.
         /// </summary>
         /// <remarks>
@@ -94,5 +85,14 @@ namespace ProjetoWeb3C.UI
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label msgerro;
+
+        /// <summary>
+        /// Controle btnEsqueciSenha.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btnEsqueciSenha;
     }
 }
