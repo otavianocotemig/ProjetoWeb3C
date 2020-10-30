@@ -178,6 +178,7 @@
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="UI\Default.aspx" />
+    <Content Include="UI\FrmClientes.aspx" />
     <Content Include="UI\FrmMeuPerfil.aspx" />
     <Content Include="UI\Login.aspx" />
     <Content Include="Web.config" />
@@ -198,6 +199,13 @@
     </Compile>
     <Compile Include="UI\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmClientes.aspx.cs">
+      <DependentUpon>FrmClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\FrmClientes.aspx.designer.cs">
+      <DependentUpon>FrmClientes.aspx</DependentUpon>
     </Compile>
     <Compile Include="UI\FrmMeuPerfil.aspx.cs">
       <DependentUpon>FrmMeuPerfil.aspx</DependentUpon>

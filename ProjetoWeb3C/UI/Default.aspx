@@ -25,6 +25,10 @@
                   <li  class="nav-item">
                     <a class="nav-link" href="FrmMeuPerfil.aspx">Meu Perfil</a>
                   </li>
+
+                   <li  class="nav-item">
+                    <a class="nav-link" href="FrmClientes.aspx">Clientes</a>
+                  </li>
                 
                 </ul>
               
