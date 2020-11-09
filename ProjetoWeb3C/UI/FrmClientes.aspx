@@ -30,14 +30,16 @@
             <asp:Label ID="Label4" runat="server" Text="Senha"></asp:Label>
             <asp:TextBox ID="txtSenha" type="password" runat="server" class="form-control"> </asp:TextBox>
 
-                
+            <asp:Label ID="msgerro" runat="server" Text="." ForeColor="#cc3300"></asp:Label>   
+            
             <br />
-             <asp:Button ID="btnGravar" runat="server" class="btn btn-lg btn-primary" Text="Gravar"  />
+             <asp:Button ID="btnGravar" runat="server" class="btn btn-lg btn-primary" Text="Inserir" OnClick="btnGravar_Click"  />
              <asp:Button ID="btnRetornar" runat="server" class="btn btn-lg btn-primary" Text="Retornar" OnClick="btnRetornar_Click"  />
 
-              <asp:GridView ID="gridClientes" CssClass="table table-striped" runat="server" AllowPaging="True" PageSize="3" OnPageIndexChanging="gridClientes_PageIndexChanging" OnRowDeleting="gridClientes_RowDeleting">
+              <asp:GridView ID="gridClientes" CssClass="table table-striped" runat="server" AllowPaging="True" PageSize="3" OnPageIndexChanging="gridClientes_PageIndexChanging" OnRowDeleting="gridClientes_RowDeleting" OnRowCancelingEdit="gridClientes_RowCancelingEdit" OnRowEditing="gridClientes_RowEditing" OnRowUpdating="gridClientes_RowUpdating">
                   <Columns>
                       <asp:CommandField ShowDeleteButton="True" />
+                      <asp:CommandField ShowEditButton="True" />
                   </Columns>
                   <PagerSettings PageButtonCount="3" Position="TopAndBottom" />
             </asp:GridView>

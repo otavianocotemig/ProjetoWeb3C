@@ -13,6 +13,8 @@
     <form id="form1" class="form-signin" runat="server">
         <div>
             <h3>Acesso ao Sistema</h3>
+            
+                   
             <asp:Label ID="Label1" runat="server" Text="Email"></asp:Label>
 
             <asp:TextBox ID="txtEmail" type="email" class="form-control"  runat="server"></asp:TextBox>
@@ -33,6 +35,7 @@
               <asp:Label ID="msgerro" runat="server" ForeColor="#FF3300"></asp:Label>
         </div>
         <asp:LinkButton ID="btnEsqueciSenha" class="btn btn-link" runat="server" OnClick="btnEsqueciSenha_Click">Esqueci Minha Senha</asp:LinkButton>
+        
     </form>
 </body>
 </html>

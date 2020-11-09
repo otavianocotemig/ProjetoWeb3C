@@ -93,12 +93,12 @@ namespace ProjetoWeb3C.BLL
         // Metodo utilizado para Inserir dados do Cliente no Banco de Dados
         public void InserirCliente(tblClienteDTO ObjCliente)
         {
-            string sql = string.Format($@"INSERT INTO tbl_cliente VALUES (NULL,'{ObjCliente.Nome_cliente}',
+            string sql = string.Format($@"INSERT INTO tbl_cliente(id_cliente,nome_cliente,sobrenome_cliente,Email_cliente,senha_cliente,cpf_cliente)
+                                                                    VALUES (NULL,'{ObjCliente.Nome_cliente}',
                                                                           '{ObjCliente.Sobrenome_cliente}',
                                                                           '{ObjCliente.Email_cliente}',
                                                                           '{ObjCliente.Senha_cliente}',
-                                                                          '{ObjCliente.Cpf_cliente}',
-                                                                           '{ObjCliente.Tpusuario}');");
+                                                                          '{ObjCliente.Cpf_cliente}');");
             DaoBanco.executarComando(sql);
 
 

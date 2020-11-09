@@ -114,6 +114,15 @@ namespace ProjetoWeb3C.UI
         protected global::System.Web.UI.WebControls.TextBox txtSenha;
 
         /// <summary>
+        /// Controle msgerro.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label msgerro;
+
+        /// <summary>
         /// Controle btnGravar.
         /// </summary>
         /// <remarks>
