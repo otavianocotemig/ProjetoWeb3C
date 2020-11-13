@@ -50,6 +50,13 @@
             <asp:Button ID="btnPesquisar" runat="server" OnClick="btnPesquisar_Click" class="btn btn-lg btn-primary" Text="Pesquisar" />
           </p>
             <asp:GridView ID="GridProdutos" CssClass="table-responsive-sm" runat="server" Height="99px" Width="152px" GridLines="Horizontal">
+                <Columns>
+                    <asp:TemplateField>
+                        <ItemTemplate>
+                            <asp:ImageButton ID="img1" runat="server" ImageUrl='<%# "~//imgProdutos//"+Eval("foto")  %>' Width="80px" Height="80px" />
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                </Columns>
             </asp:GridView>
         </div>
     </form>

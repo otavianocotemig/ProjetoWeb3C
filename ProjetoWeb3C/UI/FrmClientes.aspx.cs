@@ -17,16 +17,15 @@ namespace ProjetoWeb3C.UI
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (IsPostBack == false)
-            {
-                exibirGrid();
-            }
-            
+                      
         }
 
         public void exibirGrid()
         {
-            gridClientes.DataSource = bllCliente.ListarClientes();
+            string condicao = "nome_cliente like '%" + txtPesquisar.Text + "%'" +
+                              " or sobrenome_cliente like '%" + txtPesquisar.Text + "%'";
+
+            gridClientes.DataSource = bllCliente.PesquisarClientes(condicao);
             gridClientes.DataBind();
         }
         protected void btnRetornar_Click(object sender, EventArgs e)
@@ -112,6 +111,16 @@ namespace ProjetoWeb3C.UI
                 msgerro.Text = ex.Message;
 
             }
+        }
+
+        protected void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            string condicao = "nome_cliente like '%" + txtPesquisar.Text + "%'" +
+                              " or sobrenome_cliente like '%" + txtPesquisar.Text + "%'";
+
+            gridClientes.DataSource = bllCliente.PesquisarClientes(condicao);
+            gridClientes.DataBind();
+
         }
     }
 }

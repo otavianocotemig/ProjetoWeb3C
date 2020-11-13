@@ -141,6 +141,24 @@ namespace ProjetoWeb3C.UI
         protected global::System.Web.UI.WebControls.Button btnRetornar;
 
         /// <summary>
+        /// Controle txtPesquisar.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtPesquisar;
+
+        /// <summary>
+        /// Controle btnPesquisar.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnPesquisar;
+
+        /// <summary>
         /// Controle gridClientes.
         /// </summary>
         /// <remarks>

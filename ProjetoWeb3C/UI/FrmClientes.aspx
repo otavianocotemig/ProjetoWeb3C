@@ -35,6 +35,10 @@
             <br />
              <asp:Button ID="btnGravar" runat="server" class="btn btn-lg btn-primary" Text="Inserir" OnClick="btnGravar_Click"  />
              <asp:Button ID="btnRetornar" runat="server" class="btn btn-lg btn-primary" Text="Retornar" OnClick="btnRetornar_Click"  />
+              <p>
+            <asp:TextBox ID="txtPesquisar" runat="server" CssClass="form-control" ></asp:TextBox>
+            <asp:Button ID="btnPesquisar" runat="server" class="btn btn-primary" Text="Pesquisar" OnClick="btnPesquisar_Click" />
+          </p>
 
               <asp:GridView ID="gridClientes" CssClass="table table-striped" runat="server" AllowPaging="True" PageSize="3" OnPageIndexChanging="gridClientes_PageIndexChanging" OnRowDeleting="gridClientes_RowDeleting" OnRowCancelingEdit="gridClientes_RowCancelingEdit" OnRowEditing="gridClientes_RowEditing" OnRowUpdating="gridClientes_RowUpdating">
                   <Columns>
