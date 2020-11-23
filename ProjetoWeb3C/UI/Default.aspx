@@ -14,7 +14,7 @@
         
           <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             
-              <a class="navbar-brand" href="FrmMain.aspx">Projeto Web 3C</a>
+              <a class="navbar-brand" href="Default.aspx">Projeto Web 3C</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -56,6 +56,13 @@
                             <asp:ImageButton ID="img1" runat="server" ImageUrl='<%# "~//imgProdutos//"+Eval("foto")  %>' Width="80px" Height="80px" />
                         </ItemTemplate>
                     </asp:TemplateField>
+
+                     <asp:TemplateField>
+                        <ItemTemplate>
+                            <a href='FrmProdutosDetalhe.aspx?codigoProduto=<%#Eval("id") %>'>Detalhes</a>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+
                 </Columns>
             </asp:GridView>
         </div>

@@ -64,5 +64,11 @@ namespace ProjetoWeb3C.BLL
 
         }
 
+        public DataTable consultarProdutos(int codigoProduto)
+        {
+            string sql = string.Format($@"select * from tbl_produto where id ="+codigoProduto);
+            return daoBanco.executarConsulta(sql);
+        }
+
     }
 }
